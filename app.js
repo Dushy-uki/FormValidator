@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-   
-   
 
     function checkPasswordStrength(password) {
         let strengthMeter = document.getElementById("password-strength"); // Ensure this element exists
