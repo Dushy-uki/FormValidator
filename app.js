@@ -11,17 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
 
-    function validateInput(input, regex) {
-        if (!regex.test(input.value)) {
-            input.style.border = "2px solid red";
-            return false;
-        } else {
-            input.style.border = "2px solid green";
-            return true;
-        }
-    }
+   
 
     function checkPasswordStrength(password) {
         let strengthMeter = document.getElementById("password-strength"); // Ensure this element exists
