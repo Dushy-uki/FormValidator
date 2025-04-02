@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
    
+   
 
     function checkPasswordStrength(password) {
         let strengthMeter = document.getElementById("password-strength"); // Ensure this element exists
